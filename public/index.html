@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 8</title>
+</head>
+<style>
+  h1, h2 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+</style>
+<body>
+  <h1>Desafio Clase 8</h1>
+
+  <form id="addForm">
+    <h2>Agregar Producto</h2>
+    <input name="title" type="text" placeholder="Nombre del Producto...">
+    <input name="price" type="number" placeholder="Precio...">
+    <input name="thumbnail" type="text" placeholder="url Imagen...">
+    <button type="submit">Agregar</button>
+  </form>
+
+  <form id='updateForm'>
+    <h2>Actualizar Producto</h2>
+    <input name="id" type="number" placeholder="Ingrese el ID...">
+    <input name="title" type="text" placeholder="Nombre del Producto...">
+    <input name="price" type="number" placeholder="Precio...">
+    <input name="thumbnail" type="text" placeholder="url Imagen...">
+    <button type="submit">Actualizar</button>
+  </form>
+
+  <script src="public.js"></script>
+</body>
+</html>
