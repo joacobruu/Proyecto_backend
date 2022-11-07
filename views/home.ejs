@@ -1,10 +1,15 @@
-<form action="/api/productos" method="post">
-  <label>Title</label>
-  <input type="text" name="title">
-  <label>Price</label>
-  <input type="number" name="price">
-  <label>Thumbnail</label>
-  <input type="text" name="thumbnail">
-  <button>Enviar</button>
-</form>
-<%- include('./partials/productlList.ejs')  %> 
+<%- include('./styles/home.ejs')  %>
+<div class="container">
+  <h1 class="container-title">Ingrese Producto</h1>
+  <form class="form" action="/api/productos" method="post">
+    <label>Title</label>
+    <input type="text" name="title">
+    <label>Price</label>
+    <input type="number" name="price">
+    <label>Thumbnail</label>
+    <input type="text" name="thumbnail">
+    <button>Enviar</button>
+  </form>
+  <%- include('./partials/productlList.ejs')  %>
+  <%- include('./partials/chat.ejs')  %>  
+</div>
